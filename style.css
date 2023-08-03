@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --shadow-color: 0deg 0% 71%;
+  --shadow-elevation-low: 0px 0.7px 0.8px hsl(var(--shadow-color) / 0.21),
+    0px 1.1px 1.2px -1.2px hsl(var(--shadow-color) / 0.21),
+    0px 2.4px 2.7px -2.5px hsl(var(--shadow-color) / 0.21);
+  --shadow-elevation-medium: 0px 0.7px 0.8px hsl(var(--shadow-color) / 0.22),
+    0px 2.1px 2.4px -0.8px hsl(var(--shadow-color) / 0.22),
+    0px 5px 5.6px -1.7px hsl(var(--shadow-color) / 0.22),
+    0px 12px 13.5px -2.5px hsl(var(--shadow-color) / 0.22);
+  --shadow-elevation-high: 0px 0.7px 0.8px hsl(var(--shadow-color) / 0.21),
+    0px 3px 3.4px -0.4px hsl(var(--shadow-color) / 0.21),
+    0px 5.3px 6px -0.7px hsl(var(--shadow-color) / 0.21),
+    0px 8.5px 9.6px -1.1px hsl(var(--shadow-color) / 0.21),
+    0px 13.5px 15.2px -1.4px hsl(var(--shadow-color) / 0.21),
+    0px 20.9px 23.5px -1.8px hsl(var(--shadow-color) / 0.21),
+    -0.1px 31.6px 35.6px -2.1px hsl(var(--shadow-color) / 0.21),
+    -0.1px 46.4px 52.2px -2.5px hsl(var(--shadow-color) / 0.21);
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+  max-width: 1440px;
+  height: 100%;
+  display: flex;
+}
+
+.card {
+  background-color: rgba(171, 171, 255, 0.395);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 550px;
+  width: 969px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px;
+  box-shadow: var(--shadow-elevation-high);
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  height: 100%;
+  max-width: 323px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  border-radius: 15px 0 0 15px;
+}
+.suv {
+  background-color: hsl(184, 100%, 22%);
+  height: 100%;
+  max-width: 323px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  height: 100%;
+  max-width: 323px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  border-radius: 0 15px 15px 0;
+}
+
+h1 {
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  font-size: 45px;
+  margin-left: 50px;
+  margin-top: 130px;
+  margin-bottom: 30px;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  position: relative;
+  margin-left: 50px;
+  line-height: 1.9;
+  letter-spacing: 0.2px;
+}
+
+img {
+  scale: 1;
+  position: absolute;
+  top: 1px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-top: 55px;
+}
+
+.btn1,
+.btn2,
+.btn3 {
+  background-color: hsl(0, 0%, 95%);
+  width: 53%;
+  height: 50px;
+  border-radius: 100px;
+  border: none;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 17px;
+  color: hsl(31, 77%, 52%);
+  margin-left: 50px;
+  margin-top: 80px;
+  cursor: pointer;
+  transition: transform 1.2s ease-in-out;
+}
+
+.btn3 {
+  color: hsl(179, 100%, 13%);
+  transition: transform 1.2s ease-in-out;
+}
+
+.btn2 {
+  color: hsl(184, 100%, 22%);
+  transition: transform 1.2s ease-in-out;
+}
+
+.btn3:hover {
+  transform: scale(1.1);
+}
+.btn2:hover {
+  transform: scale(1.1);
+}
+.btn1:hover {
+  transform: scale(1.1);
+}
+
+body .attribution {
+  text-align: center;
+}
+
+/*   written with BangBang by Moonir300   */
